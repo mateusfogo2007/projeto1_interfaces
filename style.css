@@ -1,17 +1,15 @@
 
-* @import url('https://fonts.googleapis.com/css2?family=Epunda+Slab:ital,wght@0,300..900;1,300..900&display=swap');
-/*Inserção fonte offline*/
 @font-face {
     font-family: "Bitcount Grid Double";
     src: url('./Fontes/BitcountGridDouble-Light.ttf');
 }
-/*Introdução de elementos*/
 * {
     margin: 0 auto;
     padding: 0;
     box-sizing: border-box;
   }
   body {
+    background-color: antiquewhite;
    
     font-size: 18px;
     line-height: 1.6;
