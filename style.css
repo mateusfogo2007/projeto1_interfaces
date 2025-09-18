@@ -35,7 +35,6 @@
 body {
   font-family: 'Roboto', sans-serif;
 }
-/*Estrutura do Menu*/
 .menu {
     font-family:Zain;
     list-style: none;
@@ -74,13 +73,12 @@ body {
     display: block;
     width: 100px;
 }
-/*Estrutura do Rodapé*/
 .rodape {
     background-color: black;
-    color: white;
+    color: yellow;
     height: auto;
     width: 100%;
-    font-size: 11px;
+    font-size: 20px;
     font-family: "Epunda Slab", serif;
     font-optical-sizing: auto;
     font-weight: weight;
@@ -88,7 +86,7 @@ body {
 }
 .rodape a {
     text-decoration: none;
-    color: white;
+    color: yellow;
     margin-bottom: 5px;
 }
 .rodape-div {
@@ -97,19 +95,19 @@ body {
     width: 100%;
     margin: auto;
     align-items: stretch;
-    padding: 60px 10px 40px 10px;
+    padding: 10px 10px 10px 10px;
 }
 .rodape-div-1, .rodape-div-2, .rodape-div-3, .rodape-div-4 {
     display: flex;
-    width: calc(100% / 4 - 20px);
+    width: calc(100% / 4 - 10px);
     padding: 10px;
 }
 .rodape span {
-    color: bisque;
+    color: black;
 }
 .rodape-direitos {
     width: calc(100% - 20px);
-    background-color: aquamarine;
+    background-color: black;
     padding: 10px;
     margin: 0px;
     text-align: center;

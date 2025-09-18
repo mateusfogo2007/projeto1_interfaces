@@ -1,76 +1,288 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="../style.css"/>
     <link rel="icon" type="image/png" href="../icones/e911_emergency_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png"/>
-    <title>Importância do exercício físico</title>
+    <title>Importância do Exercício Físico</title>
+
+    <style>
+        /* CSS COM O DESIGN BEGE */
+        
+        /* 1. CONFIGURAÇÕES GLOBAIS */
+        :root {
+            --cor-texto: #3D3522; /* Um marrom escuro para texto, mais suave que preto */
+            --cor-titulo: #2B2618;
+            --cor-link: #8B4513; /* Um tom de marrom para links */
+            --cor-fundo: #F5F5DC; /* O tom de BEGE principal */
+            --cor-borda: #E0E0C6; /* Uma borda que combina com o bege */
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: var(--cor-fundo);
+            color: var(--cor-texto);
+            line-height: 1.6;
+            padding-top: 80px; /* Adiciona espaço no topo para não ficar atrás do header fixo */
+        }
+
+        /* 2. CONTAINER PRINCIPAL */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* 3. CABEÇALHO E NAVEGAÇÃO */
+        .header {
+            background-color: #ffffff;
+            width: 100%;
+            padding: 15px 5%;
+            border-bottom: 1px solid var(--cor-borda);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+            
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.8em;
+            font-weight: bold;
+            color: var(--cor-titulo);
+            text-decoration: none;
+        }
+        
+        .logo span {
+            color: var(--cor-link);
+        }
+
+        .menu {
+            list-style: none;
+            display: flex;
+            gap: 15px;
+        }
+
+        .menu a {
+            color: var(--cor-texto);
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1em;
+            padding: 10px 15px;
+            border-radius: 6px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .menu a:hover {
+            background-color: #E9E9D4;
+            color: var(--cor-link);
+        }
+
+        /* 4. ESTILOS DE TEXTO E SEÇÕES */
+        h1, h2, h3 {
+            color: var(--cor-titulo);
+            margin-bottom: 20px;
+            line-height: 1.3;
+        }
+        
+        h1 {
+            font-size: 2.5em;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        h2 {
+            font-size: 2em;
+            border-bottom: 1px solid var(--cor-borda);
+            padding-bottom: 10px;
+        }
+        
+        h3 {
+            font-size: 1.5em;
+            margin-top: 30px;
+        }
+        
+        p {
+            margin-bottom: 20px;
+        }
+
+        ul {
+            padding-left: 20px;
+            margin-bottom: 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+        
+        section {
+            margin-bottom: 40px;
+        }
+
+        /* 5. MÍDIA (IMAGENS E VÍDEO) */
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            border: 1px solid var(--cor-borda);
+            margin: 20px 0;
+            display: block; /* Garante que a imagem seja um bloco para aplicar margens */
+        }
+
+        /* 6. RODAPÉ */
+        .rodape {
+            background-color: #E9E9D4;
+            color: var(--cor-texto);
+            padding: 30px 20px;
+            text-align: center;
+            border-top: 1px solid var(--cor-borda);
+        }
+
+        .rodape-conteudo {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .rodape-conteudo p {
+            margin-bottom: 10px;
+        }
+
+        .rodape-conteudo a {
+            color: var(--cor-link);
+        }
+        
+        .rodape-direitos {
+            margin-top: 20px;
+            font-size: 0.9em;
+        }
+
+        /* RESPONSIVIDADE PARA O MENU */
+        @media (max-width: 768px) {
+            body {
+                padding-top: 120px;
+            }
+            .header {
+                flex-direction: column;
+                padding: 15px;
+            }
+            .menu {
+                margin-top: 15px;
+            }
+        }
+    </style>
 </head>
-   <body>
-<h1>Importância do exercício físico</h1>
-<br>
-<p><b>A prática de atividade física é, sem dúvida, essencial para aumentarmos nossa qualidade de vida. Inúmeros estudos demonstram como a prática frequente de atividade física evita 
-doenças e melhora, até mesmo, nossa disposição para a realização de nossas atividades diárias. A seguir, listaremos os principais benefícios de se praticar atividades físicas 
-e também os riscos de se ter uma vida sedentária:<b><p>
- <br>
-    <ul>
-<li>A atividade física previne o desenvolvimento de doenças crônicas, como hipertensão e diabetes.</li>
-<li>As atividades físicas controlam os níveis de colesterol.</li>
-<li>A atividade física provoca uma série de mudanças no organismo, tais como o ganho de massa muscular, que está diretamente relacionado com a melhora da autoestima.</li></ol>
-<li>Atividade física melhora dores e diminui a incapacidade funcional.</li>
-<li>As atividades físicas melhoram o desempenho cognitivo.</li>
-<li>A prática de atividades físicas reduz o estresse e aumenta a sensação de bem-estar.</li>
-<li>A atividade física pode ser uma importante aliada no tratamento da depressão e ansiedade.</li>
-    <ul>
-<img src="../imagens/pessoas.jpg" width="900" height="540">
- <br>
- <br>
- <h1>Impactos do exercício físico em cada faixa etária</h1>
- <u>Crianças e adolescentes (até 17 anos)</u>
-<br>
--O exercício físico nessa fase é essencial para o desenvolvimento saudável do corpo e da mente. A prática regular de esportes ajuda no crescimento ósseo, melhora a postura e fortalece músculos e articulações. Além disso, promove socialização, disciplina e melhora no desempenho escolar, já que aumenta a concentração e reduz o estresse.
-Principais benefícios:
-   <ul>
-<li>Desenvolvimento motor e coordenação.
-<li>Melhoria da autoestima.
-<li>Prevenção da obesidade infantil.
-<li>Fortalecimento do sistema imunológico.
-   <ul>
-  <br>
-   <u>Adultos jovens (18 a 30 anos)</u>
-<br>
-  -Nessa fase, o corpo está em seu auge físico, e o exercício pode ser direcionado tanto para estética quanto para desempenho esportivo. A prática regular ajuda a manter um peso saudável, melhora a resistência cardiorrespiratória e fortalece ossos e músculos para prevenir problemas futuros.
-  Principais benefícios:
-  <ul>
-  <li>Redução do risco de doenças crônicas (diabetes, hipertensão).
-  <li> Melhoria da performance física e mental.
-  <li>Aumento da energia e produtividade.
-  <li>Melhoria do sono e do humor.
-  <ul>
-<br>
-    <u>Adultos de meia-idade (31 a 59 anos)</u>
-<br>
--Nessa fase começam a aparecer sinais de envelhecimento natural, como perda de massa muscular e redução da flexibilidade. O exercício é essencial para retardar esses efeitos, além de ajudar no controle do peso e na prevenção de doenças cardiovasculares.
-Principais benefícios:
-<ul>
-<li>Redução do risco de infarto e AVC.
-<li>Melhoria da mobilidade e postura.
-<li>Controle da pressão arterial e colesterol.
-<li>Redução do estresse e ansiedade.
-</ul>
-<br>
-     <u>Idosos (60+ anos)</u>
-<br>
-  -O exercício físico na terceira idade é fundamental para preservar a autonomia e a qualidade de vida. Atividades como caminhada, natação e musculação leve ajudam a prevenir quedas, melhorar a coordenação e reduzir dores articulares.
-  Principais benefícios:
-  <ul>
-  <li>Prevenção da osteoporose e artrite.
-  <li>Melhoria da memória e função cognitiva.
-  <li>Fortalecimento muscular e equilíbrio.
-  <li>Promoção da socialização e bem-estar emocional.
-  </ul>
-<img src="../imagens/"
+<body id="topo">
+    
+    <header class="header">
+        <a href="../../index.html" class="logo">ZONA<span>SPRINT</span></a>
+        <nav>
+            <ul class="menu">
+                <li><a href="Pagina1.html">Exercício Físico</a></li>
+                <li><a href="Pagina2.html">Alimentação</a></li>
+                <li><a href="Pagina3.html">Corrida de Rua</a></li>
+                <li><a href="../Pagina4.html">Recordes</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        
+        <section>
+            <h1>Importância do exercício físico</h1>
+            <p><b>A prática de atividade física é, sem dúvida, essencial para aumentarmos nossa qualidade de vida. Inúmeros estudos demonstram como a prática frequente de atividade física evita doenças e melhora, até mesmo, nossa disposição para a realização de nossas atividades diárias. A seguir, listamos os principais benefícios de se praticar atividades físicas e também os riscos de se ter uma vida sedentária:</b></p>
+            <ul>
+                <li>A atividade física previne o desenvolvimento de doenças crônicas, como hipertensão e diabetes.</li>
+                <li>As atividades físicas controlam os níveis de colesterol.</li>
+                <li>A atividade física provoca uma série de mudanças no organismo, tais como o ganho de massa muscular, que está diretamente relacionado com a melhora da autoestima.</li>
+                <li>Atividade física melhora dores e diminui a incapacidade funcional.</li>
+                <li>As atividades físicas melhoram o desempenho cognitivo.</li>
+                <li>A prática de atividades físicas reduz o estresse e aumenta a sensação de bem-estar.</li>
+                <li>A atividade física pode ser uma importante aliada no tratamento da depressão e ansiedade.</li>
+            </ul>
+            <img src="../imagens/pessoas.jpg" alt="Pessoas de diferentes idades e gêneros se exercitando juntas ao ar livre">
+        </section>
+
+        <section>
+            <h2>Impactos do exercício físico em cada faixa etária</h2>
+
+            <div>
+                <h3>Crianças e adolescentes (até 17 anos)</h3>
+                <p>O exercício físico nessa fase é essencial para o desenvolvimento saudável do corpo e da mente. A prática regular de esportes ajuda no crescimento ósseo, melhora a postura e fortalece músculos e articulações. Além disso, promove socialização, disciplina e melhora no desempenho escolar, já que aumenta a concentração e reduz o estresse.</p>
+                <b>Principais benefícios:</b>
+                <ul>
+                    <li>Desenvolvimento motor e coordenação.</li>
+                    <li>Melhoria da autoestima.</li>
+                    <li>Prevenção da obesidade infantil.</li>
+                    <li>Fortalecimento do sistema imunológico.</li>
+                </ul>
+                <img src="../imagens/criancas.jpg" alt="Crianças jogando futebol em um campo de grama">
+            </div>
+
+            <div>
+                <h3>Adultos jovens (18 a 30 anos)</h3>
+                <p>Nessa fase, o corpo está em seu auge físico, e o exercício pode ser direcionado tanto para estética quanto para desempenho esportivo. A prática regular ajuda a manter um peso saudável, melhora a resistência cardiorrespiratória e fortalece ossos e músculos para prevenir problemas futuros.</p>
+                <b>Principais benefícios:</b>
+                <ul>
+                    <li>Redução do risco de doenças crônicas (diabetes, hipertensão).</li>
+                    <li>Melhoria da performance física e mental.</li>
+                    <li>Aumento da energia e produtividade.</li>
+                    <li>Melhoria do sono e do humor.</li>
+                </ul>
+                <img src="../imagens/18a30anos.jpg" alt="Jovem adulto se exercitando com pesos em uma academia">
+            </div>
+
+            <div>
+                <h3>Adultos de meia-idade (31 a 59 anos)</h3>
+                <p>Nessa fase começam a aparecer sinais de envelhecimento natural, como perda de massa muscular e redução da flexibilidade. O exercício é essencial para retardar esses efeitos, além de ajudar no controle do peso e na prevenção de doenças cardiovasculares.</p>
+                <b>Principais benefícios:</b>
+                <ul>
+                    <li>Redução do risco de infarto e AVC.</li>
+                    <li>Melhoria da mobilidade e postura.</li>
+                    <li>Controle da pressão arterial e colesterol.</li>
+                    <li>Redução do estresse e ansiedade.</li>
+                </ul>
+                <img src="../imagens/meia-idade-se-exercitando.jpg" alt="Casal de meia-idade correndo em um parque">
+            </div>
+
+            <div>
+                <h3>Idosos (60+ anos)</h3>
+                <p>O exercício físico na terceira idade é fundamental para preservar a autonomia e a qualidade de vida. Atividades como caminhada, natação e musculação leve ajudam a prevenir quedas, melhorar a coordenação e reduzir dores articulares.</p>
+                <b>Principais benefícios:</b>
+                <ul>
+                    <li>Prevenção da osteoporose e artrite.</li>
+                    <li>Melhoria da memória e função cognitiva.</li>
+                    <li>Fortalecimento muscular e equilíbrio.</li>
+                    <li>Promoção da socialização e bem-estar emocional.</li>
+                </ul>
+                <img src="../imagens/idosos.jpg" alt="Grupo de idosos praticando alongamento ao ar livre">
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="rodape" id="contato">
+        <div class="rodape-conteudo">
+            <h3>ZONA SPRINT</h3>
+            <p><strong>Contato:</strong> (61) 99994-2704 | <strong>Email:</strong> <a href="mailto:zonadesprint@gmail.com">zonadesprint@gmail.com</a></p>
+            <p>Avenida Visconde de Indaiatuba, 1894 - Indaiatuba, SP - CEP: 13331-900</p>
+            <p class="rodape-direitos">Copyright &copy; 2025 | Zona Sprint. Todos os Direitos Reservados.</p>
+        </div>
+    </footer>
 
 </body>
-<html>
+</html>
