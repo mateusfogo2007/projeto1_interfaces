@@ -1,198 +1,14 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css"/>
     <title>Zona de Sprint - A História da Corrida</title>
-    <link rel="icon" type="image/png" href="./icones/iconecorredor.png">
-    
-    <style>
-        /* CSS COM O FUNDO BEGE */
-        
-        /* 1. CONFIGURAÇÕES GLOBAIS */
-        :root {
-            --cor-texto: #3D3522; /* Um marrom escuro para texto, mais suave que preto */
-            --cor-titulo: #2B2618;
-            --cor-link: #8B4513; /* Um tom de marrom para links */
-            --cor-fundo: #F5F5DC; /* O tom de BEGE principal */
-            --cor-borda: #E0E0C6; /* Uma borda que combina com o bege */
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        html {
-            scroll-behavior: smooth;
-        }
-
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            background-color: var(--cor-fundo);
-            color: var(--cor-texto);
-            line-height: 1.6;
-            padding-top: 80px; /* Adiciona espaço no topo para não ficar atrás do header fixo */
-        }
-
-        /* 2. CONTAINER PRINCIPAL */
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-
-        /* 3. CABEÇALHO E NAVEGAÇÃO */
-        .header {
-            background-color: #ffffff; /* Cabeçalho mantido branco para contraste */
-            width: 100%;
-            padding: 15px 5%;
-            border-bottom: 1px solid var(--cor-borda);
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
-            
-            position: fixed;
-            top: 0;
-            left: 0;
-            z-index: 1000;
-
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .logo {
-            font-size: 1.8em;
-            font-weight: bold;
-            color: var(--cor-titulo);
-            text-decoration: none;
-        }
-        
-        .logo span {
-            color: var(--cor-link);
-        }
-
-        .menu {
-            list-style: none;
-            display: flex;
-            gap: 15px;
-        }
-
-        .menu a {
-            color: var(--cor-texto);
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 1em;
-            padding: 10px 15px;
-            border-radius: 6px;
-            transition: background-color 0.3s, color 0.3s;
-        }
-
-        .menu a:hover {
-            background-color: #E9E9D4; /* Um bege um pouco mais escuro para o hover */
-            color: var(--cor-link);
-        }
-
-        /* 4. ESTILOS DE TEXTO E SEÇÕES */
-        h1, h2, h3 {
-            color: var(--cor-titulo);
-            margin-bottom: 20px;
-            line-height: 1.3;
-        }
-        
-        h1 {
-            font-size: 2.5em;
-            text-align: center;
-        }
-
-        h2 {
-            font-size: 2em;
-            border-bottom: 1px solid var(--cor-borda);
-            padding-bottom: 10px;
-        }
-        
-        h3 {
-            font-size: 1.5em;
-        }
-        
-        p {
-            margin-bottom: 20px;
-        }
-
-        ul {
-            padding-left: 20px;
-            margin-bottom: 20px;
-        }
-
-        li {
-            margin-bottom: 10px;
-        }
-        
-        section {
-            margin-bottom: 40px;
-        }
-
-        /* 5. MÍDIA (IMAGENS E VÍDEO) */
-        img, video {
-            max-width: 100%;
-            height: auto;
-            border-radius: 5px;
-            border: 1px solid var(--cor-borda); /* Adiciona uma borda sutil nas imagens */
-            margin: 20px 0;
-        }
-        
-        .image-caption {
-            text-align: center;
-            font-style: italic;
-            color: #7A7258;
-            font-size: 0.9em;
-        }
-
-        /* 6. RODAPÉ */
-        .rodape {
-            background-color: #E9E9D4; /* Rodapé com um bege um pouco mais escuro */
-            color: var(--cor-texto);
-            padding: 30px 20px;
-            text-align: center;
-            border-top: 1px solid var(--cor-borda);
-        }
-
-        .rodape-conteudo {
-            max-width: 800px;
-            margin: 0 auto;
-        }
-        
-        .rodape-conteudo p {
-            margin-bottom: 10px;
-        }
-
-        .rodape-conteudo a {
-            color: var(--cor-link);
-        }
-        
-        .rodape-direitos {
-            margin-top: 20px;
-            font-size: 0.9em;
-        }
-
-        /* RESPONSIVIDADE PARA O MENU */
-        @media (max-width: 768px) {
-            body {
-                padding-top: 120px;
-            }
-            .header {
-                flex-direction: column;
-                padding: 15px;
-            }
-            .menu {
-                margin-top: 15px;
-            }
-        }
-    </style>
+    <link rel="icon" type="icon" href="./icones/iconecorredor.png">
 </head>
 <body id="topo">
-    
+   
     <header class="header">
         <a href="#topo" class="logo">ZONA<span>SPRINT</span></a>
         <nav>
@@ -200,7 +16,7 @@
                 <li><a href="../projeto1interfaces/paginas/Pagina1.html" target="_blank">Exercício Físico</a></li>
                 <li><a href="../projeto1interfaces/paginas/Pagina2.html" target="_blank">Alimentação</a></li>
                 <li><a href="../projeto1interfaces/paginas/Pagina3.html" target="_blank">Corrida de Rua</a></li>
-                <li><a href="../Pagina4.html" target="_blank">Recordes</a></li>
+                <li><a href="../projeto1_interfaces/paginas/Pagina4.html" target="_blank">Recordes</a></li>
             </ul>
         </nav>
     </header>
@@ -215,7 +31,7 @@
             <p>Nos primórdios da humanidade, a corrida não era um esporte ou lazer, mas uma necessidade vital. Nossos ancestrais, como caçadores-coletores, dependiam da habilidade de correr longas distâncias para duas atividades cruciais:</p>
             <p><b>Caça por Persistência:</b> Humanos não eram os animais mais rápidos, mas possuíam uma vantagem única: a capacidade de suar e resfriar o corpo eficientemente. Isso permitia que perseguissem presas muito mais velozes por horas, sob o calor, até que o animal entrasse em colapso por exaustão.</p>
             <p><b>Fuga e Defesa:</b> Correr era a forma mais eficaz de escapar de predadores e de se mover rapidamente entre territórios em busca de segurança e recursos.</p>
-            <img src="./imagens/historiacorrida.jpg" alt="Ilustração de humanos primitivos caçando por persistência">
+            <img src="./imagens/1 maratona ny.jpg" alt="Ilustração de humanos primitivos caçando por persistência">
         </section>
 
         <section>
@@ -235,7 +51,7 @@
                 <li>Atualmente, grandes maratonas como as de Nova York, Berlim e Boston reúnem dezenas de milhares de corredores.</li>
             </ul>
         </section>
-        
+       
         <section>
             <h2>A ENERGIA DA LARGADA</h2>
             <video src="./videos/138443-769724615_small.mp4" controls></video>
@@ -250,12 +66,8 @@
             <p class="rodape-direitos">Copyright &copy; 2025 | Zona Sprint. Todos os Direitos Reservados.</p>
         </div>
     </footer>
-
 </body>
 </html>
-
-
-
 
 
 
