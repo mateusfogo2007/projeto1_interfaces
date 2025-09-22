@@ -1,24 +1,130 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Recordes</title>
-  <link rel="stylesheet" href="../style.css">
-  <link rel="icon" type="image/png" href="../icones/trofeu.jpg"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recordes da Corrida</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" type="image/png" href="../icones/iconecorredor.png"/>
 </head>
-<body>
-  <u><h1>Recordes e curiosidades</h1></u>
-  <h2>Recordes recentes importantes:</h2>
-  <p>Maratona Masculina: Eliud Kipchoge (Quênia) é o recordista mundial com 2h01min09s (Berlim, 2022).
-<img src="../imagens/kipchogeberlim.jpg" width="600" height="900">
-    Maratona Feminina: Tigist Assefa (Etiópia) marcou 2h11min53s (Berlim, 2023).
-  <img src="../imagens/assefaberlim.jpg" width="600" height="900">
-    Meia-maratona Masculina: Jacob Kiplimo (Uganda), 57min31s (Lisboa, 2021).
-   
-    Meia-maratona Feminina: Letesenbet Gidey (Etiópia), 1h02min52s (Valência, 2021).
-   
-    Maior maratona do mundo: A Maratona de Nova York reúne mais de 50 mil corredores todos os anos.
-  </p>
+<body id="topo">
+    <header class="header">
+        <a href="index.html" class="logo">ZONA<span>SPRINT</span></a>
+        <nav>
+            <ul class="menu">
+                <li><a href="../paginas/Pagina1.html">Exercício Físico</a></li>
+                <li><a href="../paginas/Pagina2.html">Alimentação</a></li>
+                <li><a href="../paginas/Pagina3.html">Corrida de Rua</a></li>
+                <li><a href="../paginas/Pagina4.html">Recordes</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container">
+        <section>
+            <h1>Recordes e Curiosidades</h1>
+            <p>O mundo da corrida é um palco de superação constante, onde atletas de elite desafiam os limites do corpo humano. Conheça alguns dos marcos mais impressionantes do esporte.</p>
+        </section>
+        <section>
+            <h2>Recordes Mundiais em Destaque</h2>
+                    <h3>Maratona Masculina</h3>
+                    <p class="record-holder">Eliud Kipchoge (Quênia)</p>
+                    <p class="record-time">2h01min09s</p>
+                    <p class="record-location">Maratona de Berlim, 2022</p>
+                </div>
+                <div class="record-image">
+                    <img src="../imagens/kipchogeberlim.jpg" width="720" height="900" alt="Eliud Kipchoge comemorando seu recorde mundial na Maratona de Berlim.">
+                </div>
+            </div>
+            <div class="record-layout">
+                <div class="record-text">
+                    <h3>Maratona Feminina</h3>
+                    <p class="record-holder">Tigist Assefa (Etiópia)</p>
+                    <p class="record-time">2h11min53s</p>
+                    <p class="record-location">Maratona de Berlim, 2023</p>
+                </div>
+                <div class="record-image">
+                    <img src="../imagens/assefaberlim.jpg" width="900" height="640" alt="Tigist Assefa cruzando a linha de chegada e quebrando o recorde mundial em Berlim.">
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2>Outras Marcas Históricas</h2>
+            <ul>
+                <li><b>Meia Maratona Masculina:</b> Jacob Kiplimo (Uganda) - <b>57min31s</b> (Lisboa, 2021).</li>
+                <li><b>Meia Maratona Feminina:</b> Letesenbet Gidey (Etiópia) - <b>1h02min52s</b> (Valência, 2021).</li>
+                <li><b>Maior Maratona do Mundo:</b> A Maratona de Nova York é famosa por reunir mais de 50.000 corredores de todo o mundo anualmente.</li>
+            </ul>
+            <h2>Curiosidades</h2>
+            <ul>
+            Esporte mais antigo do mundo:
+              <br>
+A corrida é considerada a forma mais antiga de competição esportiva. Nos primeiros Jogos Olímpicos da Grécia Antiga (776 a.C.), a única prova disputada era uma corrida de aproximadamente 192 metros (o Stadion).
+            Velocidade humana máxima:
+              <br>
+              Usain Bolt, considerado o homem mais rápido do mundo, chegou a atingir 44,72 km/h nos 100 metros rasos em 2009.
+              <br>
+              Endorfina da felicidade:
+              <br>
+A corrida libera endorfinas, conhecidas como o “hormônio da felicidade”, o que ajuda a reduzir estresse e melhorar o humor — fenômeno popularmente chamado de runner’s high.
+             <br>
+             Corridas extremas:
+             <br>
+Existem provas super desafiadoras, como a Maratona do Pólo Norte (em temperaturas abaixo de –30 °C) e o Maratona das Areias, no deserto do Saara, com 250 km percorridos em etapas.
+            </ul>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/hxDn4EEMank" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </section>
+        <section class="form-section">
+            <h2>Quer receber mais notícias?</h2>
+            <p>Cadastre-se abaixo para receber novidades, dicas de treino e informações sobre o mundo da corrida diretamente no seu e-mail.</p>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="nome">Nome Completo:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Escreva seu nome" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="seu.email@exemplo.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="nascimento">Data de Nascimento:</label>
+                    <input type="date" id="nascimento" name="nascimento">
+                </div>
+                <div class="form-group">
+                    <label>Gênero:</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="genero" value="Feminino"> Feminino</label>
+                        <label><input type="radio" name="genero" value="Masculino"> Masculino</label>
+                        <label><input type="radio" name="genero" value="Outros"> Outros</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="comentarios">Comentários:</label>
+                    <textarea id="comentarios" name="comentarios" rows="4" placeholder="Deixe sua mensagem..."></textarea>
+                </div>
+                <div class="form-group checkbox-group">
+                    <label>
+                        <input type="checkbox" name="termos" required>
+                        Aceito os termos e condições.
+                    </label>
+                    <label>
+                        <input type="checkbox" name="lgpd">
+                        Aceito o contrato de LGPD.
+                    </label>
+                </div>
+                <div class="form-buttons">
+                    <input type="submit" value="Enviar Cadastro">
+                    <input type="reset" value="Limpar">
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer class="rodape" id="contato">
+        <div class="rodape-conteudo">
+            <h3>ZONA SPRINT</h3>
+            <p><strong>Contato:</strong> (61) 99994-2704 | <strong>Email:</strong> <a href="mailto:zonadesprint@gmail.com">zonadesprint@gmail.com</a></p>
+            <p>Avenida Visconde de Indaiatuba, 1894 - Indaiatuba, SP - CEP: 13331-900</p>
+            <p class="rodape-direitos">Copyright &copy; 2025 | Zona Sprint. Todos os Direitos Reservados.</p>
+        </div>
+    </footer>
 </body>
 </html>
