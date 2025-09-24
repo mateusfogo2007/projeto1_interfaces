@@ -1,4 +1,21 @@
-   
+
+
+body {
+    background-image: url("../imagens/corridastrava.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    min-height: 100vh; 
+    margin: 0; 
+    font-family: sans-serif; 
+}
+.conteudo {
+    color: white; 
+    background-color: rgba(0, 0, 0, 0.5); 
+    padding: 20px;
+    text-align: center;
+}
 :root {
     --cor-texto: #3D3522; 
     --cor-titulo: #2B2618;

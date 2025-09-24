@@ -97,10 +97,57 @@ Existem provas super desafiadoras, como a Maratona do Pólo Norte (em temperatur
                         <label><input type="radio" name="genero" value="Outros"> Outros</label>
                     </div>
                 </div>
-                <div class="form-group">
-                    <label for="comentarios">Comentários:</label>
-                    <textarea id="comentarios" name="comentarios" rows="4" placeholder="Deixe sua mensagem..."></textarea>
-                </div>
+                <label for="username">Nome de Usuário:</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="password">Senha:</label>
+        <input type="password" id="password" name="password" required>
+        <fieldset>
+            <legend>Pratica Esportes?</legend>
+            <div class="radio-group">
+                <input type="radio" id="esporte_sim" name="faz_esporte" value="sim">
+                <label for="esporte_sim" style="font-weight: normal; display: inline;">Sim</label>
+            </div>
+            <div class="radio-group">
+                <input type="radio" id="esporte_nao" name="faz_esporte" value="nao">
+                <label for="esporte_nao" style="font-weight: normal; display: inline;">Não</label>
+            </div>
+        <br>
+        </fieldset>
+        <label for="tempo_corrida">Há quanto tempo corre?</label>
+        <input type="text" id="tempo_corrida" name="tempo_corrida" placeholder="Ex: 2 anos e 6 meses">
+        <label for="maior_distancia">Qual a maior distância que já correu (em km)?</label>
+        <input type="number" id="maior_distancia" name="maior_distancia" step="0.1" placeholder="Ex: 42.2">
+        <fieldset>
+            <legend>Recordes Pessoais (RP)</legend>
+            <label for="rp_5k">5 km:</label>
+            <input type="time" id="rp_5k" name="rp_5k" step="1">
+            <label for="rp_10k">10 km:</label>
+            <input type="time" id="rp_10k" name="rp_10k" step="1">
+            <label for="rp_21k">21 km (Meia Maratona):</label>
+            <input type="time" id="rp_21k" name="rp_21k" step="1">
+            <label for="rp_42k">42 km (Maratona):</label>
+            <input type="time" id="rp_42k" name="rp_42k" step="1">
+        </fieldset>
+        <label for="cidade">Cidade:</label>
+        <input type="text" id="cidade" name="cidade">
+        <legend>Equipamentos</legend>
+        <label for="marca_tenis">Qual sua marca de tênis de corrida preferida?</label>
+        <input type="text" id="marca_tenis" name="marca_tenis" placeholder="Ex: Asics, Nike, Hoka...">
+        <label for="gps_app">Qual relógio GPS ou aplicativo você usa para correr?</label>
+        <input type="text" id="gps_app" name="gps_app" placeholder="Ex: Strava, Garmin, Polar, Apple Watch...">
+    </fieldset>
+    <fieldset>
+        <legend>Saúde e Informações Físicas</legend>
+        <p class="privacy-notice">As informações de saúde são confidenciais e usadas apenas para fornecer uma experiência mais personalizada. Elas não serão compartilhadas.</p>
+        <label for="peso">Peso (em kg):</label>
+        <input type="number" id="peso" name="peso" step="0.1" placeholder="Ex: 75.5">
+        <label for="altura">Altura (em cm):</label>
+        <input type="number" id="altura" name="altura" placeholder="Ex: 180">
+        <label for="lesoes">Você tem um histórico de lesões? Se sim, quais?</label>
+        <textarea id="lesoes" name="lesoes" placeholder="Descreva brevemente aqui... (Opcional)"></textarea>
+    </fieldset>
+    <button type="submit">Salvar Informações</button>
                 <div class="form-group checkbox-group">
                     <label>
                         <input type="checkbox" name="termos" required>
